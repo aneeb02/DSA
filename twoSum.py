@@ -27,7 +27,17 @@ class Solution:
                 return [i, seen[difference]]
         
         return []
-            
+
+        # alternate approach
+        # seen = {}
+
+        # for i, n in enumerate(numbers):
+        #     print(i,n)
+        #     j = target - n
+        #     if j in seen:
+        #         return [seen[j]+1, i+1]
+        #     seen[n] = i
+        # return []    
 
 
 nums = [2,7,11,15, 3,5,77,14,5,2,621,5,1,4,7,8,9,0]
