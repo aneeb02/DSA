@@ -4,7 +4,6 @@ Given two strings s and t, return true if the two strings are anagrams of each o
 An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
 '''
 
-
 # starting solution: sort, then check char by char
 # def isAnagram(self, s: str, t: str) -> bool:
 #     s = sorted(s)
@@ -24,7 +23,7 @@ def isAnagram(self, s: str, t: str) -> bool:
     #convert to dict
     s_counts = Counter(s)
     t_counts = Counter(t)
-
+    
     #check if both are equal
     return s_counts == t_counts
   

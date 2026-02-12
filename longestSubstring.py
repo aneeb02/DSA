@@ -16,11 +16,12 @@ class Solution:
 
         # slide a window for substring
         while right < len(s):
+            # increase window size if unique character is seen and add it to set
             if s[right] not in seen:
                 seen.add(s[right])
                 count = max(count, 1 + right-left)
                 right += 1
-
+            # move window forward
             else:
                 seen.discard(s[left])
                 left += 1
