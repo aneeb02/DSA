@@ -24,7 +24,7 @@ class Queue:
     def show(self):
         print(self._queue)
 
-
+        
 
 my_queue = Queue()
 my_queue.enqueue("A")
